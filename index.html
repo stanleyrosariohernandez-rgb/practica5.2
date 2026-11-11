@@ -1,0 +1,75 @@
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ChatBot Assistant</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <main class="chat-container">
+
+        <header class="chat-header">
+            <div class="bot-avatar">🤖</div>
+
+            <div class="bot-info">
+                <h1>ChatBot Assistant</h1>
+                <p><span class="status"></span> En línea</p>
+            </div>
+
+            <button id="resetButton" class="reset-button"
+                title="Reiniciar conversación">
+                ↻
+            </button>
+        </header>
+
+        <section id="chatMessages" class="chat-messages"
+            aria-live="polite">
+
+            <div class="message bot-message">
+                <div class="message-avatar">🤖</div>
+                <div class="message-content">
+                    ¡Hola! Bienvenido a ChatBot Assistant.
+                    Estoy aquí para ayudarte. ¿Qué necesitas saber?
+                </div>
+            </div>
+
+        </section>
+
+        <div class="quick-options">
+            <button class="quick-button" data-message="Ayuda">
+                Ayuda
+            </button>
+            <button class="quick-button" data-message="¿Qué servicios ofrecen?">
+                Servicios
+            </button>
+            <button class="quick-button" data-message="Hola">
+                Saludar
+            </button>
+        </div>
+
+        <form id="chatForm" class="chat-input">
+            <input
+                type="text"
+                id="userInput"
+                placeholder="Escribe tu mensaje..."
+                autocomplete="off"
+                aria-label="Escribe tu mensaje"
+            >
+
+            <button type="submit" id="sendButton">
+                Enviar
+            </button>
+        </form>
+
+        <footer class="chat-footer">
+            ChatBot Assistant | Asistente virtual
+        </footer>
+
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>

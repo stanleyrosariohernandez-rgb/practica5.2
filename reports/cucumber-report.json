@@ -1,0 +1,435 @@
+[
+  {
+    "description": "  Como usuario del asistente virtual\n  Quiero interactuar mediante mensajes\n  Para obtener información y ayuda",
+    "elements": [
+      {
+        "description": "",
+        "id": "chatbot-assistant;el-usuario-saluda-al-chatbot",
+        "keyword": "Scenario",
+        "line": 7,
+        "name": "El usuario saluda al chatbot",
+        "steps": [
+          {
+            "result": {
+              "status": "passed",
+              "duration": 229078400
+            },
+            "keyword": "Before",
+            "hidden": true
+          },
+          {
+            "result": {
+              "status": "passed",
+              "duration": 68654900
+            },
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 8,
+            "name": "que el usuario abre el chatbot",
+            "match": {
+              "location": "steps\\chatbot.steps.js:62"
+            }
+          },
+          {
+            "result": {
+              "status": "passed",
+              "duration": 57194399
+            },
+            "arguments": [],
+            "keyword": "When ",
+            "line": 9,
+            "name": "escribe \"Hola\"",
+            "match": {
+              "location": "steps\\chatbot.steps.js:89"
+            }
+          },
+          {
+            "result": {
+              "status": "passed",
+              "duration": 3497400
+            },
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 10,
+            "name": "el chatbot responde con un mensaje de bienvenida",
+            "match": {
+              "location": "steps\\chatbot.steps.js:119"
+            }
+          },
+          {
+            "result": {
+              "status": "passed",
+              "duration": 198211799
+            },
+            "keyword": "After",
+            "hidden": true
+          }
+        ],
+        "tags": [],
+        "type": "scenario"
+      },
+      {
+        "description": "",
+        "id": "chatbot-assistant;consultar-los-servicios-disponibles",
+        "keyword": "Scenario",
+        "line": 12,
+        "name": "Consultar los servicios disponibles",
+        "steps": [
+          {
+            "result": {
+              "status": "passed",
+              "duration": 234117900
+            },
+            "keyword": "Before",
+            "hidden": true
+          },
+          {
+            "result": {
+              "status": "passed",
+              "duration": 67410500
+            },
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 13,
+            "name": "que el chatbot está activo",
+            "match": {
+              "location": "steps\\chatbot.steps.js:66"
+            }
+          },
+          {
+            "result": {
+              "status": "passed",
+              "duration": 46182399
+            },
+            "arguments": [],
+            "keyword": "When ",
+            "line": 14,
+            "name": "el usuario pregunta \"¿Qué servicios ofrecen?\"",
+            "match": {
+              "location": "steps\\chatbot.steps.js:94"
+            }
+          },
+          {
+            "result": {
+              "status": "passed",
+              "duration": 3753000
+            },
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 15,
+            "name": "el chatbot muestra información sobre los servicios",
+            "match": {
+              "location": "steps\\chatbot.steps.js:128"
+            }
+          },
+          {
+            "result": {
+              "status": "passed",
+              "duration": 237225600
+            },
+            "keyword": "After",
+            "hidden": true
+          }
+        ],
+        "tags": [],
+        "type": "scenario"
+      },
+      {
+        "description": "",
+        "id": "chatbot-assistant;enviar-un-mensaje-vacío",
+        "keyword": "Scenario",
+        "line": 17,
+        "name": "Enviar un mensaje vacío",
+        "steps": [
+          {
+            "result": {
+              "status": "passed",
+              "duration": 264476299
+            },
+            "keyword": "Before",
+            "hidden": true
+          },
+          {
+            "result": {
+              "status": "passed",
+              "duration": 31020499
+            },
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 18,
+            "name": "que el usuario está en el chatbot",
+            "match": {
+              "location": "steps\\chatbot.steps.js:71"
+            }
+          },
+          {
+            "result": {
+              "status": "passed",
+              "duration": 57488100
+            },
+            "arguments": [],
+            "keyword": "When ",
+            "line": 19,
+            "name": "intenta enviar un mensaje vacío",
+            "match": {
+              "location": "steps\\chatbot.steps.js:99"
+            }
+          },
+          {
+            "result": {
+              "status": "passed",
+              "duration": 3517399
+            },
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 20,
+            "name": "el sistema muestra una advertencia solicitando un mensaje",
+            "match": {
+              "location": "steps\\chatbot.steps.js:137"
+            }
+          },
+          {
+            "result": {
+              "status": "passed",
+              "duration": 220446600
+            },
+            "keyword": "After",
+            "hidden": true
+          }
+        ],
+        "tags": [],
+        "type": "scenario"
+      },
+      {
+        "description": "",
+        "id": "chatbot-assistant;el-chatbot-recibe-una-pregunta-desconocida",
+        "keyword": "Scenario",
+        "line": 22,
+        "name": "El chatbot recibe una pregunta desconocida",
+        "steps": [
+          {
+            "result": {
+              "status": "passed",
+              "duration": 237501400
+            },
+            "keyword": "Before",
+            "hidden": true
+          },
+          {
+            "result": {
+              "status": "passed",
+              "duration": 32364600
+            },
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 23,
+            "name": "que el chatbot está activo",
+            "match": {
+              "location": "steps\\chatbot.steps.js:66"
+            }
+          },
+          {
+            "result": {
+              "status": "passed",
+              "duration": 52092500
+            },
+            "arguments": [],
+            "keyword": "When ",
+            "line": 24,
+            "name": "el usuario escribe una pregunta desconocida",
+            "match": {
+              "location": "steps\\chatbot.steps.js:104"
+            }
+          },
+          {
+            "result": {
+              "status": "passed",
+              "duration": 2933399
+            },
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 25,
+            "name": "el chatbot informa que no comprende la consulta",
+            "match": {
+              "location": "steps\\chatbot.steps.js:146"
+            }
+          },
+          {
+            "result": {
+              "status": "passed",
+              "duration": 2091499
+            },
+            "arguments": [],
+            "keyword": "And ",
+            "line": 26,
+            "name": "ofrece alternativas de ayuda",
+            "match": {
+              "location": "steps\\chatbot.steps.js:155"
+            }
+          },
+          {
+            "result": {
+              "status": "passed",
+              "duration": 205371100
+            },
+            "keyword": "After",
+            "hidden": true
+          }
+        ],
+        "tags": [],
+        "type": "scenario"
+      },
+      {
+        "description": "",
+        "id": "chatbot-assistant;el-usuario-solicita-ayuda",
+        "keyword": "Scenario",
+        "line": 28,
+        "name": "El usuario solicita ayuda",
+        "steps": [
+          {
+            "result": {
+              "status": "passed",
+              "duration": 235981499
+            },
+            "keyword": "Before",
+            "hidden": true
+          },
+          {
+            "result": {
+              "status": "passed",
+              "duration": 31510299
+            },
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 29,
+            "name": "que el usuario está conversando con el chatbot",
+            "match": {
+              "location": "steps\\chatbot.steps.js:76"
+            }
+          },
+          {
+            "result": {
+              "status": "passed",
+              "duration": 55213200
+            },
+            "arguments": [],
+            "keyword": "When ",
+            "line": 30,
+            "name": "escribe \"Ayuda\"",
+            "match": {
+              "location": "steps\\chatbot.steps.js:89"
+            }
+          },
+          {
+            "result": {
+              "status": "passed",
+              "duration": 2838400
+            },
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 31,
+            "name": "el chatbot muestra las opciones disponibles",
+            "match": {
+              "location": "steps\\chatbot.steps.js:164"
+            }
+          },
+          {
+            "result": {
+              "status": "passed",
+              "duration": 212954999
+            },
+            "keyword": "After",
+            "hidden": true
+          }
+        ],
+        "tags": [],
+        "type": "scenario"
+      },
+      {
+        "description": "",
+        "id": "chatbot-assistant;reiniciar-la-conversación",
+        "keyword": "Scenario",
+        "line": 33,
+        "name": "Reiniciar la conversación",
+        "steps": [
+          {
+            "result": {
+              "status": "passed",
+              "duration": 244585500
+            },
+            "keyword": "Before",
+            "hidden": true
+          },
+          {
+            "result": {
+              "status": "passed",
+              "duration": 86648899
+            },
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 34,
+            "name": "que existe una conversación activa",
+            "match": {
+              "location": "steps\\chatbot.steps.js:81"
+            }
+          },
+          {
+            "result": {
+              "status": "passed",
+              "duration": 28589899
+            },
+            "arguments": [],
+            "keyword": "When ",
+            "line": 35,
+            "name": "el usuario selecciona el botón \"Reiniciar\"",
+            "match": {
+              "location": "steps\\chatbot.steps.js:112"
+            }
+          },
+          {
+            "result": {
+              "status": "passed",
+              "duration": 2519999
+            },
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 36,
+            "name": "el chatbot limpia el historial",
+            "match": {
+              "location": "steps\\chatbot.steps.js:173"
+            }
+          },
+          {
+            "result": {
+              "status": "passed",
+              "duration": 2867199
+            },
+            "arguments": [],
+            "keyword": "And ",
+            "line": 37,
+            "name": "muestra nuevamente el mensaje de bienvenida",
+            "match": {
+              "location": "steps\\chatbot.steps.js:179"
+            }
+          },
+          {
+            "result": {
+              "status": "passed",
+              "duration": 209886000
+            },
+            "keyword": "After",
+            "hidden": true
+          }
+        ],
+        "tags": [],
+        "type": "scenario"
+      }
+    ],
+    "id": "chatbot-assistant",
+    "line": 2,
+    "keyword": "Feature",
+    "name": "ChatBot Assistant",
+    "tags": [],
+    "uri": "tests\\features\\chatbot.feature"
+  }
+]
